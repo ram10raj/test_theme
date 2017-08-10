@@ -1,0 +1,85 @@
+// /**
+//  * Copyright © 2016 Magento. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+
+//  Variables
+//  _____________________________________________
+
+@color-SheaBrown: #512C1D;
+@hoverColor:#EF555A;
+@color-white:#fff;
+
+//
+//    Common
+//--------------------------------------
+
+& when (@media-common = true) {
+
+//
+//    Using buttons mixins
+//--------------------------------------
+
+button,
+a.action.primary {
+    .lib-css(border-radius, @button__border-radius);
+}
+.action.primary,button.primary{
+    background: @secondary__color;
+    border: 0;
+    font-size: 24px;
+    color: @color-white;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+
+.action.primary:hover, .action.primary:active, .action.primary:focus, .button.primary:hover, .button.primary:active, .button.primary:focus{
+	background: @secondary__color__light;
+	border: 0;
+	color: #fff;
+}
+
+button {
+   transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    &:not(.primary) {
+        /*.lib-css(box-shadow, @button__shadow);*/
+        /*Customised by 23702*/
+            color: @secondary__color;
+            background: transparent;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 0;
+        /*End of customisation*/
+        &:active, &:hover {
+            //.lib-css(box-shadow, @button__shadow-active);
+            //box-shadow: inset 0 1px 0 0 #fff, inset 0 -1px 0 0 rgba(81,44,29,0.1);
+            color: @secondary__color__light;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 0;
+            text-decoration: none;
+        }		
+    }
+}
+
+body {
+    &:not(._keyfocus) {
+        button {
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+a.action.primary {
+    .lib-link-as-button();
+}
+
+.action.primary {
+    .lib-button-primary();
+     background: @secondary__color;
+    border: 0;
+}
+
+}

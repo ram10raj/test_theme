@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <!-- Including bootstrap -->
+		<link src="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic" src_type="url"/>	
+		
+		<css src="css/YouTubePopUp.css" />
+		<css src="css/styles-m.css" />
+		<css src="css/styles-l.css" media="screen and (min-width: 768px)"/>
+		<css src="css/print.css" media="print" />
+		<css src="css/bootstrap-theme.min.css" />
+		<css src="css/fontawesome/font-awesome.min.css" />
+		<css src="css/bootstrap-tiny.css"/>
+		<!--<script src="js/bootstrap.min.js" />-->
+		<script src="https://use.typekit.net/kba8lra.js" src_type="url" />
+		<script src="js/YouTubePopUp_jquery.js" />
+<!-- 		<script src="https://cdn.livefyre.com/Livefyre.js" src_type="url" /> -->
+		<script src="js/desk_chat_widget.js" />
+		<script src="js/mp_linkcode.js" />
+		<!--– mp_snippet_begins -->
+		<script src="js/mp_snippet.js" />
+		<!--– mp_snippet_ends -->
+		<script src="js/customHead.js" />
+		
+    </head>
+</page>

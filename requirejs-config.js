@@ -1,7 +1,7 @@
 var config = {
   	"paths": {
-	   "bootstrap": 'ITC/company/js/bootstrap.min.js',
-	   "youtubepopup": 'ITC/company/js/YouTubePopUp_jquery.js'
+	   "bootstrap": 'velanmagento/company/js/bootstrap.min.js',
+	   "youtubepopup": 'velanmagento/company/js/YouTubePopUp_jquery.js'
    	},
   	"shim": {
      	"bootstrap": {
